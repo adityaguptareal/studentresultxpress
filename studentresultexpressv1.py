@@ -52,15 +52,4 @@ student_data=student_data.set_index("Name")
 student_data=student_data.T
 student_data.to_csv("student_data.csv")
 print(f'\n{student_data}')
-# while True:
-#     search_name = input("\nEnter the name of the student to retrieve their subject marks (or type 'exit' to quit): ")
-#     if search_name.lower() == "exit":
-#         break
-
-#     # Check if the student name exists in the DataFrame
-#     if search_name in student_data.columns:
-#         print(f"\nSubject marks for {search_name}:")
-#         print(student_data[search_name])
-#     else:
-#         print(f"\nStudent '{search_name}' not found in the records. Please enter a valid student name.")
 
